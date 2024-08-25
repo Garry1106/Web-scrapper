@@ -1,3 +1,7 @@
- pip install -r requirements.txt
+-health.py
+> pip install -r requirements.txt
 
- stremlit run main1.py
+-Open .env file put code
+ GOOGLE_API_KEY="Paste your GOOGLE_APIKEY"
+
+> streamlit run health.py
