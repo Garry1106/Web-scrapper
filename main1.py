@@ -13,7 +13,7 @@ url = st.chat_input("Paste the URL over here for Scrapping...")
 if url:
     
     st.subheader('Recieved the Input!')
-    def scrap():
+    def task():
         # Fetching Data From the Url
         html_file = requests.get(f'{url}').text
 
@@ -23,8 +23,8 @@ if url:
         for el in div:
             st.write(el.text)
             
-schedule.every(5).seconds.do(scrap)
+    schedule.every(5).seconds.do(task)
     
-while True:
-    schedule.run_pending()
-    tm.sleep(1)       
+    while True:
+        schedule.run_pending()
+        tm.sleep(1)       
