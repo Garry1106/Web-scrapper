@@ -23,8 +23,8 @@ if url:
         for el in div:
             st.write(el.text)
             
-    schedule.every(5).seconds.do(scrap)
+schedule.every(5).seconds.do(scrap)
     
-    while True:
-        schedule.run_pending()
-        tm.sleep(1)       
+while True:
+    schedule.run_pending()
+    tm.sleep(1)       
