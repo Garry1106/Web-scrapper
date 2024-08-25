@@ -2,4 +2,4 @@ schedule
 streamlit
 requests
 BeautifulSoup4
-
+bs4
